@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>loading animation</title>
+    <meta name="vewport" content="width=divce-width,intial-scale=1.0">
+    <style>
+        html body{
+            margin: 0;
+            padding: 0;
+        }
+.continer{
+     align-items: center;
+    justify-content:center;
+    display: flex;
+height: 100vh;
+
+}
+.circle{
+    background: black;
+height: 1.5em;
+width: 1.5em;
+margin: .5em;
+border-radius: 50%;
+animation:loading 1s alternate infinite;
+}
+@keyframes loading{
+from{
+    background:black;
+    width:1.5em;
+    height:1.5em;
+}
+to{
+    background:gray;
+    width:1.7em;
+    height:1.7em;
+}
+}
+    </style>
+</head>
+<body>
+<div class="continer">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</div>
+</body>
+</html>

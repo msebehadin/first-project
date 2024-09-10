@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>s.watch</title>
+    <meta name="viewport" content="width=divce-width,intial-scale=1.0">
+    <style>
+:root{
+    --green:rgb(99, 232, 99);
+    --black:#282828;
+    --orange:#64062b5e;
+}
+html,body{
+    padding: 0;
+    margin: 0;
+    background-color:var(--black) ;
+}
+.continer{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+.clock{
+    width: 300px;
+    height: 200px;
+    background-color:var(--green);
+    text-align: center;
+    font-size: 1.8em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+.controller span{
+background-color:var(--orange);
+border: 1px solid;
+font: 0.6em sans-serif;
+border-radius: 6px;
+padding: auto;
+flex-wrap: wrap;
+}
+    </style>
+</head>
+<body>
+<div class="continer">
+    <div class="clock">
+<p>Stopwatch</p>
+<p>00:00:00</p>
+<div class="controller">
+<span>start</span>
+<span>pause</span>
+<span>reset</span>
+</div>
+    </div>
+</div>
+</body>
+</html>
